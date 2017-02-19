@@ -1,0 +1,115 @@
+*{
+ vertical-align: baseline;
+ font-weight: inherit;
+ font-family: inherit;
+ font-style: inherit;
+ font-size: 100%;
+ border: 0 none;
+ outline: 0;
+ padding: 0;
+ margin: 0;
+ }
+
+ body {
+   height: 2000px;
+   font-family: 'Myriad Pro Regular';
+   color: #333;
+   font-size: 12px;
+ }
+ .container {
+   height: 750px;
+   width: 604px;
+   margin: 200px auto;
+   position: relative;
+   left: 0;
+   top: 0;
+ }
+ .page1 {
+   height: 750px;
+   width: 523px;
+   background-color: #acacac;
+   border: 2px solid #000;
+   position: absolute;
+   left: 40px;
+   top: 40px;
+ }
+ .sticker1 {
+   height: 35px;
+   width: 99px;
+   border: 2px solid #000;
+   background-color: #00aeef;
+   position: absolute;
+   left: 440px;
+   top: 48px;
+   border-radius: 0 10px 10px 0;
+ }
+ .page2 {
+   height: 750px;
+   width: 523px;
+   background-color: #ccc;
+   border: 2px solid #000;
+   position: absolute;
+   left: 20px;
+   top: 20px;
+ }
+ .sticker2 {
+   height: 35px;
+   width: 99px;
+   border: 2px solid #000;
+   background-color: #39b54a;
+   position: absolute;
+   left: 472px;
+   top: 43px;
+   border-radius: 0 10px 10px 0;
+ }
+ .page3 {
+   height: 750px;
+   width: 523px;
+   background-color: #ebebeb;
+   border: 2px solid #000;
+   position: absolute;
+   left: 0;
+   top: 0;
+   /*padding: 39px 30px 48px 30px;*/
+ }
+ .sticker3 {
+   height: 35px;
+   width: 111px;
+   border: 2px solid #000;
+   background-color: #f68e56;
+   position: absolute;
+   left: 493px;
+   top: 40px;
+   border-radius: 0 10px 10px 0;
+ }
+ article h1 + img{
+   float: left;
+ }
+ article p + img{
+   float: right;
+ }
+ article:after {
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
+ article {
+   zoom: 1; /* set hasLayout */
+   display: block; /* resets display for IE/Win */
+   margin: 39px 30px 0 30px;
+ }
+ section article h1 {
+   font-size: 24px;
+ }
+ section h2 {
+   font-size: 18px;
+ }
+ /*Myriad Pro Font*/
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
