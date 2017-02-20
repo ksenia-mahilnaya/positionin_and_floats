@@ -36,9 +36,13 @@
     border-radius: 0 10px 10px 0;
   }
 
-  .container {
+  main, article, section, aside, footer {
+      display: block;
+  }
+
+  main {
     height: 794px;
-    width: 604px;
+    width: 610px;
     margin: 200px auto;
     position: relative;
     left: 0;
@@ -90,11 +94,11 @@
     top: 40px;
   }
 
-  article h1 + img{
+  article h1 + img {
     float: left;
   }
 
-  article p + img{
+  article p + img {
     float: right;
   }
 
@@ -110,16 +114,24 @@
   article {
     zoom: 1; /* set hasLayout */
     display: block; /* resets display for IE/Win */
-  }
-
-  /*** end of clear stream ***/
-
-  article {
     margin: 38px 30px 23px 30px;
   }
+  /*** end of clear stream ***/
 
   article h1 {
     font-size: 2rem;
+  }
+
+  article img:first-of-type {
+    margin: 20px 28px 20px 0;
+  }
+
+  article img + p, article p + img {
+    margin-top: 20px;
+  }
+
+  section + section {
+    margin: 0 29px 45px 30px;
   }
 
   section h2 {
@@ -127,38 +139,18 @@
     margin-bottom: 20px;
   }
 
-  article img:nth-child(2) {
-    margin: 20px 28px 20px 0;
-  }
-
-  article img:nth-child(5) {
-    margin-top: 21px;
-  }
-
-  article p:nth-of-type(1) {
-    margin-top: 20px;
-  }
-
-  article p:nth-of-type(3) {
-    margin-top: 18px;
-  }
-
-  section + section {
-    margin: 0 30px 22px 30px;
-  }
-
   section > img:nth-child(2n) {
-    margin-right: 69px;
+    margin-right: 72px;
   }
 
   footer {
-    margin: 0 38px 38px 38px;
+    margin: 21px 8px 0 8px;
     text-align: center;
     font-size: 0.8rem;
     line-height: 1rem;
   }
 
-  .share_this {
+  aside {
     width: 89px;
     height: 71px;
     border: 1px solid #362f2d;
@@ -168,33 +160,33 @@
     background-color: #fbaf5d;
  }
 
-  .share_this a {
+  aside a {
     color: transparent;
    }
 
-  .share_this p {
+  aside p {
     font-size: 1.3rem;
     margin: 13px 10px 11px 12px;
    }
 
-   .share_this a div {
-     background-image: url("../images/share_this.png");
-     width: 20px;
-     height: 20px;
-     display: inline-block;
-     border-radius: 50%;
-     margin-left: 7px;
-   }
+  aside a div {
+    background-image: url("../images/share_this.png");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 7px;
+  }
 
-  .share_this a:nth-of-type(1) > div {
+  aside a:first-of-type div {
     background-position: -1px -1px;
   }
 
-  .share_this a:nth-of-type(2) > div {
+  aside a:nth-of-type(even) div {
     background-position: 50px -1px;
   }
 
-  .share_this a:nth-of-type(3) > div {
+  aside a:last-of-type div {
     background-position: 21px -1px;
   }
 
