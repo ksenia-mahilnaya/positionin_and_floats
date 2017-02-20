@@ -36,11 +36,11 @@
     border-radius: 0 10px 10px 0;
   }
 
-  main, article, section, aside, footer {
+  article, section, aside, footer {
       display: block;
   }
 
-  main {
+  .container {
     height: 794px;
     width: 610px;
     margin: 200px auto;
@@ -131,7 +131,7 @@
   }
 
   section + section {
-    margin: 0 29px 45px 30px;
+    margin: 0 29px 22px 30px;
   }
 
   section h2 {
@@ -144,7 +144,7 @@
   }
 
   footer {
-    margin: 21px 8px 0 8px;
+    margin: 0 38px 45px 38px;
     text-align: center;
     font-size: 0.8rem;
     line-height: 1rem;
